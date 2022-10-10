@@ -1,0 +1,6 @@
+database:
+  connectionstring : "postgresql://youssef_said:OaxojdEHVbfbN-U7rxt7Hg@free-tier13.aws-eu-central-1.cockroachlabs.cloud:26257/transaction?sslmode=verify-full&options=--cluster%3Dsoft-warrior-2751"
+kafka:
+  kafkabroker: "kafka:29092"
+  topic: "topic_0"
+  maxBytes: 30

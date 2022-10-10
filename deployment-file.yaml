@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-with-go
+spec:
+  replicas : 5
+  selector:
+    matchLabels:
+      app: kubernetes-with-go
+  template:
+    metadata:
+      labels:
+        app: kubernetes-with-go
+    spec:
+      containers:
+        - name: kubernetes-with-go-container
+          image: youssef27/from-zer-to-hero-challenge-image
+          ports:
+            - containerPort: 8080
